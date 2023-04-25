@@ -23,12 +23,7 @@ function calculateAmount(e) {
 		isNaN(bill) ||
 		bill < 0
 	) {
-		Swal.fire({
-			icon: "error",
-			title: "Error",
-			text: "Please enter your information!",
-		});
-		return false;
+		alert("Please enter your information!");
 	}
 
 	let amountPerPerson = bill / people;
